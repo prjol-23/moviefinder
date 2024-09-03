@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./style.css";
-function Movie() {
+function Movie({ title }) {
   //handling user search
   const [search, setSearch] = useState("Latest");
   //   store movie data
@@ -11,7 +11,7 @@ function Movie() {
   const fetchLatest = async () => {
     try {
       const fetchMovie = await fetch(
-        `http://www.omdbapi.com/?s=${search}&apikey=583936a`
+        `https://www.omdbapi.com/?s=${search}&apikey=583936a`
       );
       const fetchData = await fetchMovie.json();
       console.log(fetchData.Search);
@@ -29,7 +29,7 @@ function Movie() {
     <>
       <div className="header">
         <div className="logo">
-          <h3>Find your favourite Movie/Series/Anime</h3>
+          <h3>{title}</h3>
         </div>
         <div className="search">
           <form

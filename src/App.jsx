@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-     <Movie/>
+     <Movie title="Find your favourite Movie/Series/Anime"/>
     </>
   )
 }
