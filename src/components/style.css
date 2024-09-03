@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    padding:40px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a2430;
+}
+
+.header .logo h3{
+    font-size: 26px;
+    color:#fff;
+    cursor: pointer;
+}
+
+.header .search{
+    display: flex;
+}
+
+.header .search input{
+    padding: 10px 30px;
+    outline:none;
+    border:none;
+    font-size:16px;
+    font-weight:600;
+}
+
+.header .search button{
+    padding:10px 10px;
+    border:none;
+    outline: none;
+    font-size:16px;
+    font-weight:600;
+    cursor: pointer;
+}
+
+.movie{
+    width:100%;
+    padding:20px 30px;
+    background: #0e171e;
+}
+
+.movie h3{
+    font-size: 22px;
+    color:#1692c3;
+}
+
+.movie .container{
+    max-width:100%;
+    display:flex;
+    margin-top:20px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.movie .container .box{
+
+    width:350px;
+    height:450px;
+    margin-left:20px;
+    margin-top: 15px;
+    transition:0.5s;
+}
+
+.movie .container .box img{
+    transition:0.5s;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.movie .container .box:hover img{
+    opacity: 0.2;
+}
+
+.movie .container .box .details{
+    position: relative;
+    margin-top: -100px;
+    margin-left: 20px;
+}
+
+.movie .container .box .details h3{
+    color:#fff;
+    font-size: 18px;
+}
+
+.movie .container .box .details h4{
+    margin-top: 10px;
+    color:#fff;
+}
