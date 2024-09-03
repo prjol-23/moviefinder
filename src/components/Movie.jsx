@@ -17,7 +17,7 @@ function Movie({ title }) {
       console.log(fetchData.Search);
       setData(fetchData.Search);
     } catch (error) {
-      console.error("Error fetching movie data:", error);
+      console.log("Error fetching movie data:", error);
       setData(fetchData.Search);
     }
   };
